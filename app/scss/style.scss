@@ -3,4 +3,51 @@
 @import 'reset';
 @import 'global';
 
+.header {
+	padding: 60px 0;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__top-content {
+		display: flex;
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+	}
+	&__list-item:not(:last-child) {
+		margin-right: 40px;
+	}
+	&__list-item:last-child {
+		margin-right: 63px;
+	}
+	&_list-link {
+		text-transform: capitalize;
+	}
+}
+
+.user-nav {
+	display: flex;
+	&__item {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__item--search {
+		width: 19px;
+		height: 19px;
+		margin-right: 35px;
+	}
+
+	&__item--cart {
+		width: 19px;
+		height: 19px;
+	}
+}
+
 @import 'media';
