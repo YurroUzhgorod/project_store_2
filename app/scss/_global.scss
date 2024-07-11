@@ -1,8 +1,9 @@
 body {
-	background-color: #f9faff;
+	@extend %rubik-400;
+	background-color: $silver-100;
 	font-size: 20px;
 	line-height: 1.5;
-	color: $default-color;
+	color: $dark;
 }
 
 .sr-only {
@@ -22,4 +23,16 @@ body {
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.transition-set {
+	transition-property: opacity, box-shadow, color, text-shadow;
+	transition-duration: 400ms;
+	transition-timing-function: ease-in-out;
+}
+
+.link-set {
+}
+
+.btn-set {
 }

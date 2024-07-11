@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Simple food - онлайн магазин</title>
+		<title>Simple Food - онлайн магазин</title>
 
 		<link
 			rel="apple-touch-icon"
@@ -34,20 +34,28 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__top">
-					<a class="logo" href="#"> Simple <span>Food</span> </a>
+					<a class="logo transition-set" href="#">
+						<span class="logo__styled-text">Simple</span> Food
+					</a>
 
 					<div class="header__top-content">
 						<nav class="menu">
 							<ul class="menu__list">
 								<li class="menu__list-item">
-									<a class="menu__list-link active-link" href="#">Головна</a>
+									<a
+										class="menu__list-link menu__list-link--active transition-set"
+										href="#"
+										>Головна</a
+									>
 								</li>
 
 								<li class="menu__list-item">
-									<a class="menu__list-link active-link" href="#">Страви</a>
+									<a class="menu__list-link transition-set" href="#">Страви</a>
 								</li>
 								<li class="menu__list-item">
-									<a class="menu__list-link active-link" href="#">Контакти</a>
+									<a class="menu__list-link transition-set" href="#"
+										>Контакти</a
+									>
 								</li>
 							</ul>
 						</nav>
@@ -66,7 +74,7 @@
 								href="#"
 								aria-label="кнопка переходу в корзину сайту"
 							>
-								<div class="user-nav__num">4</div>
+								<span class="user-nav__num">4</span>
 							</a>
 						</div>
 					</div>

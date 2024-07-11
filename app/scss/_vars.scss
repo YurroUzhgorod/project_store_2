@@ -1,5 +1,27 @@
-$accent-color: #ff6838;
-$default-color: #31352b;
-$title-color: #363853;
-$link-color: #363853;
-$btn-color: #fff;
+$orange-900: #ff6838;
+$silver-200: #ececec;
+$gray: #c2c2c2;
+$darkBlue-900: #363853;
+$dark: #31352b;
+$silver-100: #f9faff;
+
+%rubik-300 {
+	font-family: 'rubik';
+	font-weight: 300;
+}
+
+%rubik-400 {
+	font-family: 'rubik';
+	font-weight: 400;
+}
+
+%rubik-500 {
+	font-family: 'rubik';
+	font-weight: 500;
+}
+
+%rubik-400-italic {
+	font-family: 'rubik';
+	font-weight: 400;
+	font-style: italic;
+}
