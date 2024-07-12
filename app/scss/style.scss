@@ -24,30 +24,6 @@
 		margin-left: 5px;
 		margin-right: auto;
 	}
-
-	&__content {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__content-info {
-		max-width: 476px;
-	}
-
-	&__title {
-	}
-
-	&__text {
-	}
-
-	&__order-brn {
-	}
-
-	&__link {
-	}
-
-	&__img {
-	}
 }
 
 .logo {
@@ -61,8 +37,6 @@
 
 	&:active {
 		opacity: 0.5;
-	}
-	&__img {
 	}
 }
 
@@ -125,6 +99,58 @@
 		color: #fff;
 		font-size: 10px;
 		line-height: 1;
+	}
+}
+
+.hero {
+	&__content {
+		@extend %flex-sb;
+	}
+
+	&__info {
+		max-width: 476px;
+		width: 100%;
+		margin: auto 0;
+	}
+
+	&__title {
+		@extend %rubik-500;
+		color: $darkBlue-900;
+		text-transform: uppercase;
+		font-size: 66px;
+		line-height: 1.3;
+		margin-bottom: 20px;
+	}
+	&__title-block {
+		display: block;
+	}
+
+	&__text {
+		max-width: 450px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__order-link {
+		@extend %accent-set;
+		display: inline-block;
+		padding: 12px 32px;
+		letter-spacing: 0.03em;
+		font-size: 18px;
+		line-height: 1.3;
+		margin-right: 25px;
+	}
+
+	&__info-link {
+		@extend %text-decor-global;
+		color: $darkBlue-900;
+	}
+
+	&__img {
+		@extend %image-set;
+		max-width: 560px;
+		width: 100%;
+		height: 660px;
 	}
 }
 

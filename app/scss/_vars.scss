@@ -26,6 +26,11 @@ $silver-100: #f9faff;
 	font-style: italic;
 }
 
+%flex-sb {
+	display: flex;
+	justify-content: space-between;
+}
+
 %flex-c-c {
 	display: flex;
 	justify-content: center;
@@ -42,4 +47,14 @@ $silver-100: #f9faff;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+%accent-set {
+	color: #fff;
+	background-color: $orange-900;
+}
+
+%text-decor-global {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
 }
