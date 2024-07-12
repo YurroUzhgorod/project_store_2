@@ -31,57 +31,164 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div class="container">
-				<div class="header__top">
-					<a class="logo transition-set" href="#">
-						<span class="logo__styled-text">Simple</span> Food
-					</a>
-
-					<div class="header__top-content">
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__top transition-set">
+					<div class="container">
 						<nav class="menu">
+							<a
+								class="logo header__logo transition-set border-global"
+								href="#"
+							>
+								<img
+									class="logo__img"
+									src="./images/logo.svg"
+									alt="логотип сайту"
+									width="200px"
+									height="39px"
+								/>
+							</a>
+
 							<ul class="menu__list">
 								<li class="menu__list-item">
 									<a
-										class="menu__list-link menu__list-link--active transition-set"
+										class="menu__list-link menu__list-link--active anim-accent transition-set"
 										href="#"
 										>Головна</a
 									>
 								</li>
 
 								<li class="menu__list-item">
-									<a class="menu__list-link transition-set" href="#">Страви</a>
+									<a class="menu__list-link anim-accent transition-set" href="#"
+										>Страви</a
+									>
 								</li>
 								<li class="menu__list-item">
-									<a class="menu__list-link transition-set" href="#"
-										>Контакти</a
+									<a class="menu__list-link anim-accent transition-set" href="#"
+										>Kонтакти</a
 									>
 								</li>
 							</ul>
-						</nav>
 
-						<div class="user-nav">
-							<a
-								class="user-nav__item user-nav__item--search"
-								style="background-image: url('./images/icons/search.svg')"
-								href="#"
-								aria-label="кнопка пошуку по сайту"
-							>
-							</a>
-							<a
-								class="user-nav__item user-nav__item--cart"
-								style="background-image: url('./images/icons/cart.svg')"
-								href="#"
-								aria-label="кнопка переходу в корзину сайту"
-							>
-								<span class="user-nav__num">4</span>
-							</a>
-						</div>
+							<ul class="user-nav">
+								<li class="user-nav__item">
+									<a
+										class="user-nav__link anim-primary border-global transition-set"
+										href="#"
+										aria-label=" пошук на сайті"
+									>
+										<svg
+											class="user-nav__icon"
+											width="19"
+											height="19"
+											viewBox="0 0 21 21"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<ellipse
+												cx="9.76663"
+												cy="9.63009"
+												rx="8.98856"
+												ry="8.88424"
+												stroke="#363853"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M16.0184 16.2708L19.5424 19.7448"
+												stroke="#363853"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</a>
+								</li>
+
+								<li class="user-nav__item">
+									<a
+										class="user-nav__link user-nav__link--cart anim-primary border-global transition-set"
+										href="#"
+										aria-label="корзина покупок"
+									>
+										<svg
+											class="user-nav__icon"
+											width="19"
+											height="18"
+											viewBox="0 0 21 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
+												stroke="#363853"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M12.375 8.63337H15.1479"
+												stroke="#363853"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z"
+												stroke="#363853"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
+												stroke="#363853"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+
+										<span class="user-nav__num">4</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-			</div>
-		</header>
+			</header>
 
-		<script src="js/main.min.js"></script>
+			<main class="main">
+				<div class="container">
+					<div class="header__content">
+						<div class="header__content-info">
+							<h1 class="header__title">Доставка за 15 хвилин</h1>
+							<p class="header__text">
+								Найшвидший сервіс доставки їжі у вашому місті. Якщо запізнемось
+								- то доставка за наш рахунок
+							</p>
+							<button class="header__order-brn">Замовити</button>
+							<a class="header__link" href="#"> Детальніше</a>
+						</div>
+						<img
+							class="header__img"
+							src="./images/scooter_guy.png"
+							width="560px"
+							height="660px"
+							alt="зображення курєра на скутері"
+						/>
+					</div>
+				</div>
+				<section class="hero"></section>
+			</main>
+
+			<footer class="footer"></footer>
+			<script src="js/main.min.js"></script>
+		</div>
 	</body>
 </html>
