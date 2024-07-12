@@ -6,22 +6,55 @@ $dark: #31352b;
 $silver-100: #f9faff;
 
 %rubik-300 {
-	font-family: 'rubik';
+	font-family: 'rubik', sans-serif;
 	font-weight: 300;
 }
 
 %rubik-400 {
-	font-family: 'rubik';
+	font-family: 'rubik', sans-serif;
 	font-weight: 400;
 }
 
 %rubik-500 {
-	font-family: 'rubik';
+	font-family: 'rubik', sans-serif;
 	font-weight: 500;
 }
 
 %rubik-400-italic {
-	font-family: 'rubik';
+	font-family: 'rubik', sans-serif;
 	font-weight: 400;
 	font-style: italic;
+}
+
+%flex-sb {
+	display: flex;
+	justify-content: space-between;
+}
+
+%flex-c-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%flex-sb-c {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+%image-set {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+%accent-set {
+	color: #fff;
+	background-color: $orange-900;
+}
+
+%text-decor-global {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
 }
