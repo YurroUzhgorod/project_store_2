@@ -23,7 +23,7 @@
 			sizes="16x16"
 			href="./favicon/favicon-16x16.png"
 		/>
-		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="manifest" href="./favicon/site.webmanifest" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 
@@ -33,7 +33,7 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__top transition-set">
+				<div class="header__inner transition-set">
 					<div class="container">
 						<nav class="menu">
 							<a
@@ -214,6 +214,7 @@
 								<button
 									class="pop-food__btn pop-food__btn--burger border-global transition-set letter-upper"
 									type="button"
+									data-filter="all"
 								>
 									Бургери
 									<svg
@@ -263,6 +264,7 @@
 								<button
 									class="pop-food__btn border-global transition-set letter-upper"
 									type="button"
+									data-filter=".category-b"
 								>
 									Піца
 									<svg
@@ -320,6 +322,7 @@
 								<button
 									class="pop-food__btn border-global transition-set letter-upper"
 									type="button"
+									data-filter=".category-c"
 								>
 									Сендвічі
 									<svg
@@ -369,6 +372,7 @@
 								<button
 									class="pop-food__btn border-global transition-set letter-upper"
 									type="button"
+									data-filter=".category-d"
 								>
 									Азійська кухня
 									<svg
@@ -430,6 +434,7 @@
 								<button
 									class="pop-food__btn border-global transition-set letter-upper"
 									type="button"
+									data-filter=".category-e"
 								>
 									Cети
 									<svg
@@ -497,8 +502,8 @@
 							</li>
 						</ul>
 						<ul class="pop-food__content">
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item b">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/cheezburger.jpg"
@@ -518,8 +523,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-b">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/burger.jpg"
@@ -537,8 +542,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-c">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/king-chizzburger.jpg"
@@ -558,8 +563,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-d">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/black-hamburger.jpg"
@@ -579,8 +584,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-e">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/chiken-burger.jpg"
@@ -598,8 +603,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-b">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/cheezburger.jpg"
@@ -619,8 +624,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-b">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/burger.jpg"
@@ -638,8 +643,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-c">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/king-chizzburger.jpg"
@@ -659,8 +664,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-d">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/black-hamburger.jpg"
@@ -680,8 +685,8 @@
 									</a>
 								</article>
 							</li>
-							<li class="pop-food__item">
-								<article class="food-item border-global">
+							<li class="pop-food__item mix category-e">
+								<article class="food-item border-global transition-set">
 									<img
 										class="food-item__img"
 										src="./images/content/chiken-burger.jpg"
@@ -705,7 +710,8 @@
 			</main>
 
 			<footer class="footer"></footer>
-			<script src="js/main.min.js"></script>
+			<script src=""></script>
+			<script src="js/main.min.js "></script>
 		</div>
 	</body>
 </html>
