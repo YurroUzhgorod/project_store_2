@@ -42,11 +42,24 @@ body {
 	margin: 0 auto;
 }
 
+.section-global {
+	margin-bottom: 120px;
+}
+
 .transition-set {
 	transition-property: opacity, box-shadow, background-color, text-shadow, color,
-		stroke, path, padding, transform;
+		padding, transform;
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
+}
+
+.transition-set-svg {
+	path,
+	ellipse {
+		transition-property: fill, stroke;
+		transition-duration: 300ms;
+		transition-timing-function: ease-in-out;
+	}
 }
 
 .anim-accent {
@@ -67,7 +80,6 @@ body {
 	&:focus {
 		background: rgba(255, 104, 56, 0.1);
 		box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
-		border-radius: 5px;
 	}
 
 	&:hover {
@@ -79,10 +91,44 @@ body {
 	}
 }
 
+.anim-set {
+	&:focus {
+		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		background-color: rgba(255, 104, 56, 0.1);
+		color: $orange-900;
+	}
+
+	&:hover {
+		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		background-color: rgba(255, 255, 255, 0.1);
+		color: $orange-900;
+	}
+
+	&:active {
+		background-color: rgba(255, 104, 56, 0.1);
+		color: $orange-900;
+	}
+}
+
 .border-global {
 	border-radius: 5px;
 }
 
 .accent-color {
 	color: $orange-900;
+}
+
+.title {
+	@extend %rubik-500;
+	text-align: center;
+	font-size: 36px;
+	line-height: 1.3;
+	color: $darkBlue-900;
+	margin-bottom: 60px;
+}
+
+.letter-upper {
+	&::first-letter {
+		text-transform: uppercase;
+	}
 }
