@@ -54,6 +54,12 @@ $silver-100: #f9faff;
 	background-color: $orange-900;
 }
 
+%color-primary-set {
+	color: $orange-900;
+	background-color: rgba(255, 104, 56, 0.1);
+	box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+}
+
 %text-decor-global {
 	text-decoration: underline;
 	text-decoration-skip-ink: none;

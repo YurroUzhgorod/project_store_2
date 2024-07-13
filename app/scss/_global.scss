@@ -48,9 +48,18 @@ body {
 
 .transition-set {
 	transition-property: opacity, box-shadow, background-color, text-shadow, color,
-		stroke, path, padding, transform;
+		padding, transform;
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
+}
+
+.transition-set-svg {
+	path,
+	ellipse {
+		transition-property: fill, stroke;
+		transition-duration: 300ms;
+		transition-timing-function: ease-in-out;
+	}
 }
 
 .anim-accent {

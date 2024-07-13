@@ -184,8 +184,7 @@ function watching() {
 }
 
 exports.styles = styles;
-// exports.scripts = series(mixitup, scripts); // Включаємо mixitup() перед scripts()
-exports.scripts = scripts; // Включаємо mixitup() перед scripts()
+exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
