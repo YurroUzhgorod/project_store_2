@@ -65,20 +65,26 @@ body {
 .anim-accent {
 	&:focus {
 		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		text-decoration: none;
 	}
 
 	&:hover {
 		color: $orange-900;
+		text-decoration: none;
+		box-shadow: none;
 	}
 
 	&:active {
 		text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
+		color: $dark;
+		text-decoration: none;
+		box-shadow: none;
 	}
 }
 
 .anim-primary {
 	&:focus {
-		background: rgba(255, 104, 56, 0.1);
+		background-color: rgba(255, 104, 56, 0.1);
 		box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
 	}
 
@@ -87,26 +93,43 @@ body {
 	}
 
 	&:active {
-		background: rgba(255, 104, 56, 0.1);
+		background-color: rgba(255, 104, 56, 0.1);
 	}
 }
 
 .anim-set {
 	&:focus {
 		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-		background-color: rgba(255, 104, 56, 0.1);
-		color: $orange-900;
+		@extend %color-primary-set;
 	}
 
 	&:hover {
 		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-		background-color: rgba(255, 255, 255, 0.1);
-		color: $orange-900;
+
+		@extend %color-primary-set;
 	}
 
 	&:active {
-		background-color: rgba(255, 104, 56, 0.1);
-		color: $orange-900;
+		@extend %color-primary-set;
+		box-shadow: none;
+	}
+}
+
+.anim-set-svg {
+	// &:focus,
+	// &:hover,
+	// &:active {
+	// 	path,
+	// 	ellipse {
+	// 		stroke: $orange-900;
+	// 		fill: $orange-900;
+	// 	}
+	// }
+	&:focus .svg-path,
+	&:hover .svg-path,
+	&:active .svg-path {
+		stroke: $orange-900;
+		fill: $orange-900;
 	}
 }
 
