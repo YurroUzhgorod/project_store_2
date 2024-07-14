@@ -48,7 +48,7 @@ body {
 
 .transition-set {
 	transition-property: opacity, box-shadow, background-color, text-shadow, color,
-		padding, transform;
+		text-decoration, padding, transform;
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
 }
@@ -116,20 +116,12 @@ body {
 }
 
 .anim-set-svg {
-	// &:focus,
-	// &:hover,
-	// &:active {
-	// 	path,
-	// 	ellipse {
-	// 		stroke: $orange-900;
-	// 		fill: $orange-900;
-	// 	}
-	// }
-	&:focus .svg-path,
-	&:hover .svg-path,
-	&:active .svg-path {
-		stroke: $orange-900;
-		fill: $orange-900;
+	&:focus,
+	&:hover,
+	&:active {
+		path {
+			fill: $orange-900;
+		}
 	}
 }
 
