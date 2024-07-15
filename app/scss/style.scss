@@ -191,6 +191,13 @@
 		box-shadow: 0 0 0 1px $primary-color;
 		background-color: #fff;
 
+		&.mixitup-control-active {
+			@extend %color-accent-set;
+			path {
+				fill: #fff;
+			}
+		}
+
 		&:focus,
 		&:hover {
 			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
@@ -206,13 +213,6 @@
 
 		&:active {
 			box-shadow: inset 0 -5px 12px 0 rgba(255, 104, 56, 0.2);
-		}
-
-		&.mixitup-control-active {
-			@extend %color-accent-set;
-			path {
-				fill: #fff;
-			}
 		}
 	}
 
@@ -289,6 +289,7 @@
 .footer {
 	&__inner {
 		display: flex;
+		padding-bottom: 60px;
 	}
 
 	&__subscribe {
@@ -297,7 +298,16 @@
 
 	&__nav {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3, max-content);
+		column-gap: 90px;
+		font-size: 18px;
+		line-height: 1.3;
+		letter-spacing: 0.01em;
+		margin-right: auto;
+	}
+
+	&__item {
+		margin-bottom: 20px;
 	}
 }
 
@@ -322,10 +332,12 @@
 			opacity: 0.9;
 			transition: color 0.3s ease;
 		}
+
 		&:focus {
 			box-shadow: 0 0 0 2px $accent-color;
 			border: 1px solid transparent;
 		}
+
 		&:hover {
 			&::placeholder {
 				color: $main-color;
