@@ -46,11 +46,26 @@ body {
 	margin-bottom: 120px;
 }
 
-.transition-set {
-	transition-property: opacity, box-shadow, background-color, text-shadow, color,
-		text-decoration, padding, transform;
+.global-transition {
+	// transition-property: opacity, box-shadow, background-color, text-shadow, color, text-decoration, padding, transform;
 	transition-duration: 300ms;
 	transition-timing-function: ease-in-out;
+}
+
+.transition-prop-primary {
+	transition-property: box-shadow, text-decoration, color, text-shadow;
+}
+
+.transition-prop-local {
+	transition-property: box-shadow, color, background-color;
+}
+
+.transition-prop-set {
+	transition-property: box-shadow, background-color;
+}
+
+.transition-prop-general {
+	transition-property: box-shadow;
 }
 
 .transition-set-svg {
@@ -94,6 +109,7 @@ body {
 
 	&:active {
 		background-color: rgba(255, 104, 56, 0.1);
+		box-shadow: none;
 	}
 }
 

@@ -33,11 +33,11 @@
 	<body>
 		<div class="wrapper">
 			<header class="header">
-				<div class="header__inner transition-set">
+				<div class="header__inner global-transition">
 					<div class="container">
 						<nav class="menu">
 							<a
-								class="logo header__logo transition-set border-global"
+								class="logo header__logo global-transition border-global"
 								href="#"
 							>
 								<img
@@ -52,7 +52,7 @@
 							<ul class="menu__list">
 								<li class="menu__list-item">
 									<a
-										class="menu__list-link menu__list-link--active anim-accent transition-set letter-upper border-global"
+										class="menu__list-link menu__list-link--active anim-accent global-transition transition-prop-primary letter-upper border-global"
 										href="#"
 										>Головна</a
 									>
@@ -60,14 +60,14 @@
 
 								<li class="menu__list-item">
 									<a
-										class="menu__list-link anim-accent transition-set letter-upper border-global"
+										class="menu__list-link anim-accent global-transition transition-prop-primary letter-upper border-global"
 										href="#"
 										>Страви</a
 									>
 								</li>
 								<li class="menu__list-item">
 									<a
-										class="menu__list-link anim-accent transition-set letter-upper border-global"
+										class="menu__list-link anim-accent global-transition transition-prop-primary letter-upper border-global"
 										href="#"
 										>Kонтакти</a
 									>
@@ -77,7 +77,7 @@
 							<ul class="user-nav">
 								<li class="user-nav__item">
 									<a
-										class="user-nav__link anim-primary border-global transition-set"
+										class="user-nav__link anim-primary border-global global-transition transition-prop-set"
 										href="#"
 										aria-label=" пошук на сайті"
 									>
@@ -112,7 +112,7 @@
 
 								<li class="user-nav__item">
 									<a
-										class="user-nav__link user-nav__link--cart anim-primary border-global transition-set"
+										class="user-nav__link user-nav__link--cart anim-primary border-global global-transition transition-prop-set"
 										href="#"
 										aria-label="корзина покупок"
 									>
@@ -158,7 +158,7 @@
 											/>
 										</svg>
 
-										<span class="user-nav__num transition-set">4</span>
+										<span class="user-nav__num global-transition">4</span>
 									</a>
 								</li>
 							</ul>
@@ -183,13 +183,13 @@
 									запізнемось - то доставка за наш рахунок
 								</p>
 								<a
-									class="hero__order-link border-global anim-set transition-set letter-upper"
+									class="hero__order-link border-global anim-set global-transition transition-prop-local letter-upper"
 									href="#"
 								>
 									Замовити
 								</a>
 								<a
-									class="hero__info-link border-global anim-accent transition-set letter-upper"
+									class="hero__info-link border-global anim-accent global-transition transition-prop-primary letter-upper"
 									href="#"
 								>
 									Детальніше</a
@@ -213,7 +213,7 @@
 						<ul class="pop-food__filter--list">
 							<li class="pop-food__filter-item">
 								<button
-									class="pop-food__btn border-global transition-set letter-upper"
+									class="pop-food__btn border-global global-transition transition-prop-local letter-upper"
 									type="button"
 									data-filter="all"
 								>
@@ -263,7 +263,7 @@
 							</li>
 							<li class="pop-food__filter-item">
 								<button
-									class="pop-food__btn border-global transition-set letter-upper"
+									class="pop-food__btn border-global global-transition transition-prop-local letter-upper"
 									type="button"
 									data-filter=".category-b"
 								>
@@ -321,7 +321,7 @@
 							</li>
 							<li class="pop-food__filter-item">
 								<button
-									class="pop-food__btn border-global transition-set letter-upper"
+									class="pop-food__btn border-global global-transition transition-prop-local letter-upper"
 									type="button"
 									data-filter=".category-c"
 								>
@@ -371,7 +371,7 @@
 							</li>
 							<li class="pop-food__filter-item">
 								<button
-									class="pop-food__btn border-global transition-set letter-upper"
+									class="pop-food__btn border-global global-transition transition-prop-local letter-upper"
 									type="button"
 									data-filter=".category-d"
 								>
@@ -433,7 +433,7 @@
 							</li>
 							<li class="pop-food__filter-item">
 								<button
-									class="pop-food__btn border-global transition-set letter-upper"
+									class="pop-food__btn border-global global-transition transition-prop-local letter-upper"
 									type="button"
 									data-filter=".category-e"
 								>
@@ -503,8 +503,10 @@
 							</li>
 						</ul>
 						<ul class="pop-food__content">
-							<li class="pop-food__item b">
-								<article class="food-item border-global transition-set">
+							<li class="pop-food__item mix category-b">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/cheezburger.jpg"
@@ -517,7 +519,7 @@
 									</h3>
 									<span class="food-item__price">160 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -525,7 +527,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-b">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/burger.jpg"
@@ -536,7 +540,7 @@
 									<h3 class="food-item__title letter-upper">Біфбургер</h3>
 									<span class="food-item__price">190 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -544,7 +548,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-c">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/king-chizzburger.jpg"
@@ -557,7 +563,7 @@
 									</h3>
 									<span class="food-item__price">260 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -565,7 +571,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-d">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/black-hamburger.jpg"
@@ -578,7 +586,7 @@
 									</h3>
 									<span class="food-item__price">199 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -586,7 +594,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-e">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/chiken-burger.jpg"
@@ -597,7 +607,7 @@
 									<h3 class="food-item__title letter-upper">Чікен бургер</h3>
 									<span class="food-item__price">180 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -605,7 +615,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-b">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/cheezburger.jpg"
@@ -618,7 +630,7 @@
 									</h3>
 									<span class="food-item__price">160 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -626,7 +638,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-b">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/burger.jpg"
@@ -637,7 +651,7 @@
 									<h3 class="food-item__title letter-upper">Біфбургер</h3>
 									<span class="food-item__price">190 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -645,7 +659,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-c">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/king-chizzburger.jpg"
@@ -658,7 +674,7 @@
 									</h3>
 									<span class="food-item__price">260 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -666,7 +682,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-d">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/black-hamburger.jpg"
@@ -679,7 +697,7 @@
 									</h3>
 									<span class="food-item__price">199 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -687,7 +705,9 @@
 								</article>
 							</li>
 							<li class="pop-food__item mix category-e">
-								<article class="food-item border-global transition-set">
+								<article
+									class="food-item border-global global-transition transition-prop-general"
+								>
 									<img
 										class="food-item__img"
 										src="./images/content/chiken-burger.jpg"
@@ -698,7 +718,7 @@
 									<h3 class="food-item__title letter-upper">Чікен бургер</h3>
 									<span class="food-item__price">180 грн.</span>
 									<a
-										class="food-item__link letter-upper border-global"
+										class="food-item__link anim-set global-transition transition-prop-local letter-upper letter-upper border-global"
 										href="#"
 									>
 										До кошика
@@ -707,7 +727,7 @@
 							</li>
 						</ul>
 						<a
-							class="pop-food__link border-global transition-set letter-upper anim-accent"
+							class="pop-food__link border-global global-transition transition-prop-primary letter-upper anim-accent"
 							href="#"
 						>
 							Показати ще</a
@@ -721,7 +741,7 @@
 					<div class="footer__inner">
 						<div class="subscribe footer__subscribe">
 							<a
-								class="logo subscribe__logo transition-set border-global"
+								class="logo subscribe__logo global-transition border-global"
 								href="#"
 							>
 								<img
@@ -739,7 +759,7 @@
 							>
 								<label class="subscire__label">
 									<input
-										class="subscribe__input border-global transition-set"
+										class="subscribe__input border-global global-transition transition-prop-general"
 										type="email"
 										placeholder="Ваш email"
 										required
@@ -747,7 +767,7 @@
 									/>
 								</label>
 								<button
-									class="subscribe__btn anim-set anim-set-svg transition-set border-global"
+									class="subscribe__btn anim-set anim-set-svg global-transition transition-prop-local border-global"
 									type="button"
 								>
 									<svg
@@ -770,84 +790,84 @@
 						<ul class="footer__nav">
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Як це працює</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Про нас</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Застосунок</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Продукти</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Новини</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Блог</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Страви</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Партнери</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Що нового?</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Меню</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>ЧаПи</a
 								>
 							</li>
 							<li class="footer__item">
 								<a
-									class="footer__link anim-accent transition-set letter-upper border-global"
+									class="footer__link anim-accent global-transition transition-prop-primary letter-upper border-global"
 									href="#"
 									>Мапа сайту</a
 								>
@@ -884,7 +904,9 @@
 											stroke-linejoin="round"
 										/>
 									</svg>
-									<a class="contact-data__addres" href="#"
+									<a
+										class="contact-data__addres anim-accent border-global global-transition transition-prop-primary"
+										href="#"
 										>вул. Т.Г.Шевченка, 1</a
 									>
 								</li>
@@ -921,7 +943,9 @@
 											stroke-linejoin="round"
 										/>
 									</svg>
-									<a class="contact-data__link" href="tel:380501112233"
+									<a
+										class="contact-data__link anim-accent border-global global-transition transition-prop-primary"
+										href="tel:380501112233"
 										>380501112233</a
 									>
 								</li>
@@ -951,7 +975,9 @@
 											stroke-linejoin="round"
 										/>
 									</svg>
-									<a class="contact-data__link" href="mailto:support@sfood.com"
+									<a
+										class="contact-data__link anim-accent border-global global-transition transition-prop-primary"
+										href="mailto:support@sfood.com"
 										>support@sfood.com</a
 									>
 								</li>
@@ -960,7 +986,7 @@
 							<ul class="social-block">
 								<li class="social-block__item">
 									<a
-										class="social-block__link anim-primary transition-set"
+										class="social-block__link anim-primary global-transition transition-prop-set"
 										href="#"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -983,7 +1009,7 @@
 								</li>
 								<li class="social-block__item">
 									<a
-										class="social-block__link anim-primary transition-set"
+										class="social-block__link anim-primary global-transition transition-prop-set"
 										href="#"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -1006,7 +1032,7 @@
 								</li>
 								<li class="social-block__item">
 									<a
-										class="social-block__link anim-primary transition-set"
+										class="social-block__link anim-primary global-transition transition-prop-set"
 										href="#"
 										target="_blank"
 										rel="noopener noreferrer"
