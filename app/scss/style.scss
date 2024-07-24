@@ -19,7 +19,7 @@
 
 	&__inner.header-fixed {
 		padding: 15px 0;
-		background-color: #fff;
+		background-color: $white;
 		box-shadow: 0 0 2px 0 $theme-color;
 	}
 
@@ -45,7 +45,8 @@
 		opacity: 0.5;
 		box-shadow: none;
 	}
-	g &__img {
+
+	&__img {
 		width: 200px;
 		height: 39px;
 	}
@@ -84,16 +85,17 @@
 		&:hover {
 			ellipse,
 			path {
-				stroke: #fff;
+				stroke: $white;
 			}
 
 			span {
-				background-color: #fff;
+				background-color: $white;
 				color: $accent-color;
 			}
 		}
 		&:active {
 			box-shadow: none;
+
 			ellipse,
 			path {
 				stroke: #000;
@@ -101,9 +103,10 @@
 
 			span {
 				background-color: $accent-color;
-				color: #fff;
+				color: $white;
 			}
 		}
+
 		&--cart {
 			position: relative;
 		}
@@ -116,7 +119,7 @@
 		padding: 2px 4px;
 		border-radius: 50%;
 		background-color: $accent-color;
-		color: #fff;
+		color: $white;
 		font-size: 10px;
 		line-height: 1;
 	}
@@ -141,6 +144,7 @@
 		line-height: 1.3;
 		margin-bottom: 20px;
 	}
+
 	&__title-block {
 		display: block;
 	}
@@ -189,12 +193,12 @@
 	&__btn {
 		padding: 22px 32px 22px 86px;
 		box-shadow: 0 0 0 1px $primary-color;
-		background-color: #fff;
+		background-color: $white;
 
 		&.mixitup-control-active {
 			@extend %color-accent-set;
 			path {
-				fill: #fff;
+				fill: $white;
 			}
 		}
 
@@ -247,7 +251,7 @@
 	width: 210px;
 	height: 299px;
 	box-shadow: 0 0 0 1px $primary-color;
-	background-color: #fff;
+	background-color: $white;
 	padding: 20px 15px;
 	text-align: center;
 	font-size: 15px;
@@ -258,6 +262,7 @@
 	&:hover {
 		box-shadow: 0 0 0 1px $accent-color;
 	}
+
 	&__img {
 		width: 140px;
 		height: 140px;
@@ -270,12 +275,14 @@
 		font-size: 15px;
 		margin-bottom: auto;
 	}
+
 	&__price {
 		@extend %rubik-500;
 		color: $main-color;
 		line-height: 1.4;
 		margin-bottom: 10px;
 	}
+
 	&__link {
 		display: inline-block;
 		margin: 0 auto;
@@ -309,6 +316,21 @@
 
 	&__item {
 		margin-bottom: 20px;
+	}
+
+	&__contact {
+		margin-right: 83px;
+	}
+
+	&__line {
+		height: 74px;
+		background-color: $main-color;
+		@extend %flex-c-c;
+	}
+	&__info {
+		font-size: 14px;
+		line-height: 1;
+		color: $white;
 	}
 }
 
@@ -354,39 +376,38 @@
 	}
 }
 
-.footer__contact {
-	margin-right: 83px;
-}
-
 .contact-data {
 	font-size: 16px;
 	line-height: 2;
+
 	&__item {
 		display: flex;
 		align-items: center;
 
 		margin-bottom: 15px;
 	}
+
 	&__icon {
 		margin-right: 7px;
 	}
 }
+
 .social-block {
 	display: flex;
+
 	&__item {
 		margin-right: 13px;
-
-		&__icon {
-		}
 	}
+
 	&__link {
 		width: 39px;
 		height: 39px;
 		border-radius: 50%;
 		@extend %flex-c-c;
+
 		&:hover {
 			path {
-				fill: #fff;
+				fill: $white;
 			}
 
 			&:active {
