@@ -35,7 +35,7 @@
 	transition-property: opacity, box-shadow;
 
 	&:focus {
-		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
 	}
 
 	&:hover {
@@ -118,7 +118,7 @@
 	&__num {
 		position: absolute;
 		top: 8px;
-		right: 3px;
+		left: 27px;
 		padding: 2px 4px;
 		border-radius: 50%;
 		background-color: $accent-color;
@@ -208,7 +208,7 @@
 
 		&:focus,
 		&:hover {
-			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+			box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
 		}
 
 		&:hover {
@@ -220,7 +220,7 @@
 		}
 
 		&:active {
-			box-shadow: inset 0 -5px 12px 0 rgba(255, 104, 56, 0.2);
+			box-shadow: inset 0 -5px 12px 0 rgba($accent-color, 0.2);
 		}
 	}
 
