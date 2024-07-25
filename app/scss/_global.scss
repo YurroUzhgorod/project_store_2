@@ -78,7 +78,6 @@ body {
 
 .anim-accent {
 	&:focus {
-		// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
 		box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
 		text-decoration: none;
 	}

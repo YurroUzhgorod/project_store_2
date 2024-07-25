@@ -261,7 +261,7 @@
 	padding: 20px 15px;
 	text-align: center;
 	font-size: 15px;
-	@extend %%flex-aic;
+	@extend %flex-aic;
 	flex-direction: column;
 
 	&:hover {
