@@ -202,8 +202,7 @@
 		padding: 13px 32px;
 		box-shadow: 0 0 0 1px $primary-color;
 		background-color: $white;
-		display: flex;
-		align-items: center;
+		@extend %flex-aic;
 
 		&.mixitup-control-active {
 			@extend %color-accent-set;
@@ -262,8 +261,7 @@
 	padding: 20px 15px;
 	text-align: center;
 	font-size: 15px;
-	display: flex;
-	align-items: center;
+	@extend %%flex-aic;
 	flex-direction: column;
 
 	&:hover {
@@ -397,8 +395,7 @@
 		}
 	}
 	&__link {
-		display: flex;
-		align-items: center;
+		@extend %flex-aic;
 	}
 
 	&__icon {

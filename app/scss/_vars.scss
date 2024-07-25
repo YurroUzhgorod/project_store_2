@@ -32,6 +32,11 @@ $white: #fff;
 	justify-content: space-between;
 }
 
+%flex-aic {
+	display: flex;
+	align-items: center;
+}
+
 %flex-c-c {
 	display: flex;
 	justify-content: center;
