@@ -195,9 +195,11 @@
 	}
 
 	&__btn {
-		padding: 22px 32px 22px 86px;
+		padding: 13px 32px;
 		box-shadow: 0 0 0 1px $primary-color;
 		background-color: $white;
+		display: flex;
+		align-items: center;
 
 		&.mixitup-control-active {
 			@extend %color-accent-set;
@@ -225,10 +227,7 @@
 	}
 
 	&__icon {
-		position: absolute;
-		top: 50%;
-		left: 36px;
-		transform: translateY(-50%);
+		margin-right: 10px;
 	}
 
 	&__link {
