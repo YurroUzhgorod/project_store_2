@@ -303,6 +303,10 @@
 		padding-bottom: 60px;
 	}
 
+	&__logo {
+		margin-bottom: 28px;
+	}
+
 	&__subscribe {
 		margin-right: 70px;
 	}
@@ -343,11 +347,9 @@
 	max-width: 200px;
 	width: 100%;
 	font-size: 14px;
+}
 
-	&__logo {
-		margin-bottom: 28px;
-	}
-
+.subscribe-form {
 	&__input {
 		width: 100%;
 		border: 1px solid $theme-color;
@@ -371,7 +373,6 @@
 			}
 		}
 	}
-
 	&__btn {
 		@extend %flex-sb-c;
 		@extend %color-accent-set;

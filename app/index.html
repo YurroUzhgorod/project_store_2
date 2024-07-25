@@ -762,7 +762,7 @@
 					<div class="footer__inner">
 						<div class="subscribe footer__subscribe">
 							<a
-								class="logo subscribe__logo global-transition border-global"
+								class="logo footer__logo global-transition border-global"
 								href="#"
 							>
 								<img
@@ -774,22 +774,25 @@
 								/>
 							</a>
 							<form
-								class="subscribe__form"
+								class="subscribe-form"
 								action="#"
 								aria-label="форма для підписки на оновлення"
 							>
-								<label class="subscire__label">
+								<label
+									class="subscribe-form__label"
+									aria-label=" поле для вводу електронної пошти"
+								>
 									<input
-										class="subscribe__input border-global global-transition transition-prop-general"
+										class="subscribe-form__input border-global global-transition transition-prop-general"
 										type="email"
 										placeholder="Ваш email"
 										required
-										aria-label=" поле для вводу електронної пошти"
+										name="email"
 									/>
 								</label>
 								<button
-									class="subscribe__btn anim-set anim-set-svg global-transition transition-prop-local border-global"
-									type="button"
+									class="subscribe-form__btn anim-set anim-set-svg global-transition transition-prop-local border-global"
+									type="submit"
 								>
 									<svg
 										class="subscribe__icon transition-set-svg"
@@ -804,7 +807,7 @@
 											fill="white"
 										/>
 									</svg>
-									<span class="subscribe__btn-text">Підписатися</span>
+									<span class="subscribe-form__btn-text">Підписатися</span>
 								</button>
 							</form>
 						</div>
