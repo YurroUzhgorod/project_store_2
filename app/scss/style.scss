@@ -314,6 +314,8 @@
 	&__nav {
 		display: grid;
 		grid-template-columns: repeat(3, max-content);
+		grid-template-rows: repeat(4, max-content);
+		grid-auto-flow: column;
 		height: fit-content;
 		column-gap: 91px;
 		font-size: 18px;
