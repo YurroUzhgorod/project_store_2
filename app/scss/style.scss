@@ -372,6 +372,100 @@
 	}
 }
 
+.restaurant {
+	&__list {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+	}
+}
+
+.rest-card {
+	width: 370px;
+	height: 419px;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px 0 rgba($black, 0.1);
+
+	&__img {
+		border-radius: 10px 10px 0 0;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	&__inner {
+		padding: 0 20px;
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 1.3;
+		margin-bottom: 20px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+	}
+
+	&__time {
+		@extend %rubik-300;
+		font-size: 18px;
+		line-height: 1.66;
+
+		&--open {
+			padding-left: 32px;
+			position: relative;
+			margin-right: 4px;
+
+			&::after {
+				content: url('');
+				background-image: url('../images/sprite.svg#icon-time');
+				@extend %image-set;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 22px;
+				height: 22px;
+			}
+		}
+		&--close {
+			margin-left: 4px;
+			margin-right: auto;
+		}
+	}
+
+	&__link {
+		width: 79px;
+		height: 33px;
+		border-radius: 20px;
+		padding-left: 33px;
+		vertical-align: middle;
+		@extend %color-accent-set;
+		transition-property: padding;
+
+		&:focus,
+		&:hover,
+		&:active {
+			.rest-card__icon {
+				fill: $accent-color;
+			}
+		}
+
+		&:hover {
+			padding-left: 53px;
+		}
+		&:active {
+			padding-left: 33px;
+		}
+	}
+	&__icon {
+		width: 14px;
+		height: 12px;
+		fill: $white;
+	}
+}
+
 .footer {
 	padding-top: 60px;
 	&__inner {
