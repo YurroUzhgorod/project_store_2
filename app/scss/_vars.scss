@@ -5,6 +5,7 @@ $main-color: #363853;
 $default-color: #31352b;
 $special-color: #f9faff;
 $white: #fff;
+$black: #000;
 
 %rubik-300 {
 	font-family: 'rubik', sans-serif;
@@ -58,11 +59,6 @@ $white: #fff;
 %color-accent-set {
 	color: $white;
 	background-color: $accent-color;
-}
-
-%color-primary-set {
-	color: $accent-color;
-	background-color: rgba($accent-color, 0.1);
 }
 
 %text-decor-global {

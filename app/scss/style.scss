@@ -86,25 +86,24 @@
 		@extend %flex-c-c;
 
 		&:hover {
-			ellipse,
-			path {
+			.user-nav__icon {
 				stroke: $white;
 			}
 
-			span {
+			.user-nav__num {
 				background-color: $white;
 				color: $accent-color;
 			}
 		}
+
 		&:active {
 			box-shadow: none;
 
-			ellipse,
-			path {
-				stroke: #000;
+			.user-nav__icon {
+				stroke: $black;
 			}
 
-			span {
+			.user-nav__num {
 				background-color: $accent-color;
 				color: $white;
 			}
@@ -113,6 +112,13 @@
 		&--cart {
 			position: relative;
 		}
+	}
+	&__icon {
+		width: 19px;
+		height: 19px;
+		stroke: $black;
+		stroke-width: 1.5;
+		fill: none;
 	}
 
 	&__num {
@@ -206,7 +212,7 @@
 
 		&.mixitup-control-active {
 			@extend %color-accent-set;
-			path {
+			.pop-food__icon {
 				fill: $white;
 			}
 		}
@@ -217,9 +223,10 @@
 		}
 
 		&:hover {
-			@extend %color-primary-set;
+			color: $accent-color;
+			background-color: rgba($accent-color, 0.1);
 
-			path {
+			.pop-food__icon {
 				fill: $accent-color;
 			}
 		}
@@ -230,6 +237,8 @@
 	}
 
 	&__icon {
+		width: 44px;
+		height: 44px;
 		margin-right: 10px;
 	}
 
@@ -381,6 +390,20 @@
 		@extend %color-accent-set;
 		width: 100%;
 		padding: 13px 37px;
+
+		&:focus,
+		&:hover,
+		&:active {
+			.subscribe-form__icon {
+				fill: $accent-color;
+			}
+		}
+	}
+
+	&__icon {
+		width: 15px;
+		height: 15px;
+		fill: $white;
 	}
 }
 
@@ -400,6 +423,11 @@
 
 	&__icon {
 		margin-right: 7px;
+		width: 24px;
+		height: 24px;
+		stroke-width: 1.5;
+		fill: none;
+		stroke: $black;
 	}
 }
 
@@ -418,14 +446,31 @@
 		@extend %flex-c-c;
 
 		&:hover {
-			path {
+			.social-block__icon {
 				fill: $white;
 			}
 		}
 		&:active {
-			path {
+			.social-block__icon {
 				fill: $accent-color;
 			}
+		}
+	}
+
+	&__icon {
+		fill: $black;
+
+		&--facebook {
+			width: 10px;
+			height: 21px;
+		}
+		&--twitter {
+			width: 21px;
+			height: 17px;
+		}
+		&--instagram {
+			width: 20px;
+			height: 20px;
 		}
 	}
 }

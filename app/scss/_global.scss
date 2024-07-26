@@ -68,12 +68,7 @@ body {
 }
 
 .transition-set-svg {
-	path,
-	ellipse {
-		transition-property: fill, stroke;
-		transition-duration: 300ms;
-		transition-timing-function: ease-in-out;
-	}
+	transition-property: fill, stroke;
 }
 
 .anim-accent {
@@ -99,7 +94,6 @@ body {
 .anim-primary {
 	&:focus {
 		background-color: rgba($accent-color, 0.1);
-
 		box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
 	}
 
@@ -116,27 +110,20 @@ body {
 .anim-set {
 	&:focus {
 		box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
-		@extend %color-primary-set;
+		color: $accent-color;
+		background-color: rgba($accent-color, 0.1);
 	}
 
 	&:hover {
 		box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
-		@extend %color-primary-set;
+		color: $accent-color;
+		background-color: rgba($white, 1);
 	}
 
 	&:active {
-		@extend %color-primary-set;
+		color: $accent-color;
+		background-color: rgba($accent-color, 0.1);
 		box-shadow: none;
-	}
-}
-
-.anim-set-svg {
-	&:focus,
-	&:hover,
-	&:active {
-		path {
-			fill: $accent-color;
-		}
 	}
 }
 
