@@ -137,7 +137,8 @@ body {
 
 .title {
 	@extend %rubik-500;
-	text-align: center;
+	width: fit-content;
+	margin: 0 auto;
 	font-size: 36px;
 	line-height: 1.3;
 	color: $main-color;
@@ -148,4 +149,13 @@ body {
 	&::first-letter {
 		text-transform: uppercase;
 	}
+}
+
+.link-set {
+	@extend %color-accent-set;
+	display: inline-block;
+	padding: 12px 32px;
+	letter-spacing: 0.03em;
+	font-size: 18px;
+	line-height: 1.3;
 }

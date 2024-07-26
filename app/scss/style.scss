@@ -166,17 +166,8 @@
 		margin-bottom: 20px;
 	}
 
-	&__order-link {
-		@extend %color-accent-set;
-		display: inline-block;
-		padding: 12px 32px;
-		letter-spacing: 0.03em;
-		font-size: 18px;
-		line-height: 1.3;
-
-		&:not(:last-child) {
-			margin-right: 20px;
-		}
+	&__order-link:not(:last-child) {
+		margin-right: 20px;
 	}
 
 	&__info-link {
@@ -307,7 +298,82 @@
 	}
 }
 
+.benefit {
+	&__container {
+		padding: 0 85px;
+	}
+
+	&__inner {
+		@extend %flex-sb-c;
+	}
+
+	&__img {
+		max-width: 440px;
+		width: 100%;
+		height: 585px;
+		@extend %image-set;
+		margin-right: 20px;
+	}
+
+	&__info {
+		max-width: 470px;
+		width: 100%;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		color: $main-color;
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&__item {
+		position: relative;
+		padding-left: 64px;
+
+		&::after {
+			content: url('');
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 34px;
+			height: 34px;
+			@extend %image-set;
+		}
+
+		&--timer::after {
+			background-image: url('../images/sprite.svg#icon-timer');
+			filter: invert(48%) sepia(70%) saturate(1245%) hue-rotate(335deg)
+				brightness(99%) contrast(106%);
+		}
+
+		&--delivery::after {
+			background-image: url('../images/sprite.svg#icon-delivery');
+			filter: invert(48%) sepia(23%) saturate(5911%) hue-rotate(174deg)
+				brightness(105%) contrast(105%);
+		}
+
+		&--restaurant::after {
+			background-image: url('../images/sprite.svg#icon-restaurant');
+			filter: invert(45%) sepia(96%) saturate(5660%) hue-rotate(347deg)
+				brightness(103%) contrast(105%);
+		}
+	}
+}
+
 .footer {
+	padding-top: 60px;
 	&__inner {
 		@extend %flex-sb;
 		padding-bottom: 60px;
