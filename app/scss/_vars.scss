@@ -4,6 +4,8 @@ $theme-color: #c2c2c2;
 $main-color: #363853;
 $default-color: #31352b;
 $special-color: #f9faff;
+$white: #fff;
+$black: #000;
 
 %rubik-300 {
 	font-family: 'rubik', sans-serif;
@@ -31,6 +33,11 @@ $special-color: #f9faff;
 	justify-content: space-between;
 }
 
+%flex-aic {
+	display: flex;
+	align-items: center;
+}
+
 %flex-c-c {
 	display: flex;
 	justify-content: center;
@@ -50,13 +57,8 @@ $special-color: #f9faff;
 }
 
 %color-accent-set {
-	color: #fff;
+	color: $white;
 	background-color: $accent-color;
-}
-
-%color-primary-set {
-	color: $accent-color;
-	background-color: rgba(255, 104, 56, 0.1);
 }
 
 %text-decor-global {
