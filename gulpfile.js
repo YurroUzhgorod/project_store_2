@@ -46,7 +46,10 @@ function browsersync() {
 }
 
 function styles() {
-	return src('app/scss/style.scss')
+	return src([
+		'app/scss/style.scss',
+		'./node_modules/swiper/swiper-bundle.min.css',
+	])
 		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 		.pipe(concat('style.min.css'))
 		.pipe(
@@ -60,7 +63,11 @@ function styles() {
 }
 
 function scripts() {
-	return src(['app/js/main.js', './node_modules/mixitup/dist/mixitup.min.js'])
+	return src([
+		'./node_modules/mixitup/dist/mixitup.min.js',
+		'./node_modules/swiper/swiper-bundle.min.js',
+		'app/js/main.js',
+	])
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
 		.pipe(dest('app/js'))
