@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'reset';
 @import 'global';
 
 .header {
@@ -380,6 +381,96 @@
 	}
 }
 
+.reviews {
+	&__slider-naw {
+		text-align: center;
+		height: 44px;
+	}
+
+	&__btn {
+		display: inline-block;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		border: 3px solid $theme-color;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		transition-property: border;
+
+		&:focus {
+			box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
+		}
+
+		&:hover {
+			box-shadow: none;
+			border-color: rgba($accent-color, 0.5);
+			background-color: rgba($accent-color, 0.1);
+			.reviews__icon {
+				fill: rgba($accent-color, 0.5);
+			}
+		}
+		&:active {
+			box-shadow: none;
+			border: none;
+			background-color: rgba($accent-color, 0.1);
+			.reviews__icon {
+				fill: $accent-color;
+			}
+		}
+
+		&--next {
+			margin-right: 23px;
+		}
+	}
+
+	&__icon {
+		width: 11px;
+		height: 19px;
+		fill: $theme-color;
+
+		&--prev {
+			transform: rotate(-180deg);
+		}
+	}
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	position: static;
+	display: inline;
+	margin-right: 23px;
+}
+
+.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-color: $accent-color;
+}
+
+.swiper .swiper-pagination-bullet {
+	transition-property: background-color, box-shadow;
+	transition-duration: 300ms;
+	transition-timing-function: ease-in-out;
+
+	width: 15px;
+	height: 15px;
+
+	&:focus {
+		background-color: $theme-color;
+		box-shadow: 0 0 0 2px $accent-color;
+	}
+
+	&:hover {
+		box-shadow: 0 0 0 2px rgba($accent-color, 0.7);
+		background-color: rgba($accent-color, 0.5);
+	}
+	&:active {
+		box-shadow: none;
+		fill: rgba($accent-color, 0.5);
+	}
+}
+
 .rest-card {
 	width: 370px;
 	height: 419px;
@@ -467,6 +558,68 @@
 		width: 14px;
 		height: 12px;
 		fill: $white;
+	}
+}
+
+.review-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	margin-bottom: 30px;
+
+	&__img {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+	}
+	&__info {
+		max-width: 650px;
+		width: 100%;
+	}
+	&__text {
+		@extend %rubik-400-italic;
+		padding: 0 40px;
+		margin-bottom: 30px;
+		position: relative;
+
+		&::before,
+		&::after {
+			content: url('');
+			background-image: url('../images/sprite.svg#icon-quote');
+			@extend %image-set;
+			position: absolute;
+			width: 24px;
+			height: 19px;
+			filter: invert(79%) sepia(0%) saturate(257%) hue-rotate(217deg)
+				brightness(99%) contrast(92%);
+		}
+
+		&::before {
+			left: 0;
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+			right: 0;
+			transform: scale(-1, 1);
+		}
+	}
+
+	&__author,
+	&__status {
+		padding-left: 40px;
+		line-height: 1.3;
+	}
+
+	&__author {
+		@extend %rubik-500;
+		color: $accent-color;
+		margin-bottom: 15px;
+	}
+	&__status {
+		font-size: 14px;
 	}
 }
 
